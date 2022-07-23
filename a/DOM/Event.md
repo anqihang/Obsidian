@@ -1,0 +1,16 @@
+### 属性
+1. bubbles
+2. cancelable
+3. composed
+4. currentTarget
+5. defaultPrevented
+6. eventPhase
+7. isTrusted
+8. target
+9. timeStamp
+10. type
+### 方法
+1. composedPath()
+2. preventDefault()
+3. stopImmediatePropagation()
+4. stopPropagation()
