@@ -15,9 +15,9 @@ git config --global user.name "[name()]"
 git config --global user.email "[email address()]"
 
 git config --global color.ui auto -- 启用命令行的可用着色
+.ingorn
 ```
-\# 
-	
+
 
 ```
 #

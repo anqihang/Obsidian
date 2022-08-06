@@ -11,6 +11,13 @@
 ######/六级
 ```
 
+# 一级标题
+## 二级
+### 三级
+#### 四级
+##### 五级
+###### 六级
+
 #### 强调
 
 ```markdown
@@ -140,3 +147,29 @@ $$
 猫诺[^1]
 
 [^1]:这是脚注的内容
+
+```
+> [!INFO](+/-) 标题
+>  hellow
+```
+
+Callout Blocks 类型
+
+- note && 笔  ![[Pasted image 20220806200623.png]]
+- abstract/sumary/tldr 文档 ![[Pasted image 20220806200953.png]]
+- info/todo 谈好 ![[Pasted image 20220806201013.png]]
+- warning/caution 三角叹号 ![[Pasted image 20220806201024.png]]
+- question/help/faq ![[Pasted image 20220806201035.png]]
+- tip/hint/important ![[Pasted image 20220806201049.png]]
+- failure/fail/missing ![[Pasted image 20220806201105.png]]
+- danger/error ![[Pasted image 20220806201118.png]]
+- bug ![[Pasted image 20220806201141.png]]
+- example ![[Pasted image 20220806201155.png]]
+- quote/cite  ![[Pasted image 20220806201208.png]]
+
+
+> [!note]- 笔
+> a
+> 
+
+
