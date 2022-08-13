@@ -62,6 +62,21 @@ Vue.set(target,key,value)[不能在实例对象和根属性上添加]
 vm.$set()
 ```
 
+# 生命周期
+
+```javascript
+beforeCreate
+created
+#
+beforeMout
+mouted
+#
+beforeUpdate
+updated
+#
+beforeDestory
+destoryed
+```
 # 实例
 
 ```javascript
@@ -89,14 +104,24 @@ const vm = new Vue({
 			hander(newv,oldv){}
 		}
 	}，
-	filters:{         ----------->Vue.filter('',function(){})(全局)
+	filters:{     ----------->Vue.filter('',function(){})(全局)
 	 fil(base,str){
 		 return
 	 }
+	 },
 	 directives:{
-		 big:{
+		 big:{         --------->big(element,binding){}
+		 bind(){},
+		 insert(){},
+		 update(){}
 		 }
+	 },
+	 components:{
+		 a:v;
 	 }
-	}
+})
+//
+const v = Vue.extend({
+	template:'',
 })
 ```
