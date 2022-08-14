@@ -54,6 +54,7 @@
 ```javascript
 
 Vue.set(target,key,value)[不能在实例对象和根属性上添加]
+Vue.mixin
 ```
 
 # 方法
@@ -77,6 +78,28 @@ updated
 beforeDestory
 destoryed
 ```
+
+# 属性
+
+```javascript
+$refs#ref=''&&绑定的dom
+```
+
+# 配置项
+
+```Markdown
+el#模板
+data#数据
+computed#计算数据
+methods#方法
+watch#监视
+filters#过滤
+directives#自定义指令
+components#组件
+props#标签属性
+mixins#混合
+```
+
 # 实例
 
 ```javascript
@@ -118,10 +141,11 @@ const vm = new Vue({
 	 },
 	 components:{
 		 a:v;
-	 }
+	 },
+	 props:[],
 })
 //
-const v = Vue.extend({
+const v = Vue.extend({---》{}
 	template:'',
 })
 ```
