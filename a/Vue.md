@@ -47,6 +47,10 @@
 .meta
 .middle
 .exact
+#自定义事件
+	
+vc.$emit(vc.parent.event)&&触发父组件的方法
+vc.$off([vc.parent.evet,vc.parent.event])&&解绑多个事件，没有参数解绑所有事件,原生加.native
 ```
 
 # API
@@ -61,6 +65,10 @@ Vue.mixin
 
 ```javascript
 vm.$set()
+vm.$on
+vm.$mouted
+vm.$destory
+vm.$nextTick
 ```
 
 # 生命周期
@@ -98,6 +106,37 @@ directives#自定义指令
 components#组件
 props#标签属性
 mixins#混合
+```
+
+# 动画
+
+```
+<transition appear>
+	<div>a</div>
+</transition>
+```
+
+# 插槽
+
+```Markdown
+<vc>
+	<img/>
+</vc>
+-----[默认插槽]
+vc#<template>
+<slot>默认值</slot>##被img标签替代
+</template>
+-----[具名插槽]
+<template v-slot:fir>
+</template>
+vc#
+<slot name="fir"></slot>
+-----[作用域插槽]
+<template v-slot="new">
+{{new.v}}
+</template>
+vc#
+<slot :v='data.b'></slot>
 ```
 
 # 实例
@@ -148,4 +187,38 @@ const vm = new Vue({
 const v = Vue.extend({---》{}
 	template:'',
 })
+```
+
+# vuex
+
+```javascript
+import vue from 'vue'
+import vuex from 'vuex'
+vue.use(vuex)
+const actions={}
+const mutations={}
+const state={}
+const getters={}#结果会被缓存
+export default new vuex.Store{
+	actions,
+	mutations,
+	state,
+	getters,
+}
+```
+
+## mapState
+
+```javascript
+import {mapState,mapGetters,mapMutations,mapActions} from 'vuex'
+mapState({'name':'state.value'})[object]
+mapState([state.value])
+mapGetters()
+//
+mapMutations({name:'mutations.value'})
+//
+this.$store.state.namepace.key
+this.$store.getter[namespace/key]
+this.$store.commit('namespace.method',value)
+this.$store.dispatch('namespace.method',value)
 ```

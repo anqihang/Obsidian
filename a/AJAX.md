@@ -36,7 +36,7 @@ error
 # [Axios ](https://www.axios-http.cn/)
 
 ```
-GET:axios.get('url',{value})
+GET:axios.get('url',{value}).then()
 axios({})
 ```
 
