@@ -33,6 +33,15 @@ progess
 timeout
 error
 
+## 传参
+
+```
+query
+	#url?ley=value&key1=value1
+parms
+	#parms:{}
+```
+
 # [Axios ](https://www.axios-http.cn/)
 
 ```

@@ -139,6 +139,12 @@ vc#
 <slot :v='data.b'></slot>
 ```
 
+# 全局事件总线
+
+```
+vue.property.$bus=this
+```
+
 # 实例
 
 ```javascript
@@ -221,4 +227,41 @@ this.$store.state.namepace.key
 this.$store.getter[namespace/key]
 this.$store.commit('namespace.method',value)
 this.$store.dispatch('namespace.method',value)
+```
+
+# vue-router
+
+```javascript
+import router from 'vue-router';
+import a from './components/a'
+const router = new router({
+	routers:[
+	{
+		path:'/a',
+		component:a,
+		children:[
+		{
+			path:'new',
+			compontent:New,
+		}]
+	}
+	]
+});
+```
+
+```html
+<router-link to='/a' active-class=''></router-link>
+<router-view></router-view>
+#属性
+active-class=''#路由激活时应用css
+replace#开启网页历史替代
+```
+
+## 路由传参
+
+```
+query
+	#:to="`/a?id=${}&title=${}`"
+	#:to="{path:'/a',query:{id=,title=}}"
+	$this.$route.query.id
 ```
