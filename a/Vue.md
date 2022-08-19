@@ -85,6 +85,9 @@ updated
 #
 beforeDestory
 destoryed
+#路由钩子
+activated
+deactivated
 ```
 
 # 属性
@@ -264,4 +267,12 @@ query
 	#:to="`/a?id=${}&title=${}`"
 	#:to="{path:'/a',query:{id=,title=}}"
 	$this.$route.query.id
+```
+
+## 路由守卫
+
+```
+router.beforeEach((to,from,next)=>{
+	next()
+})
 ```
