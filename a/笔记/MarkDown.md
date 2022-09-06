@@ -32,7 +32,7 @@ _斜体_/*斜体*
 ~~删除线~~
 ==高亮==
 
-## 列表
+# 列表
 
 **有序列表**
 
@@ -69,7 +69,7 @@ _斜体_/*斜体*
 	- [ ] 任务1.1
 - [ ] 任务2
 
-**数学公式**
+# 数学公式
 
 latax
 ```markdown
@@ -80,13 +80,13 @@ $$
 $$
 ```
 
-**代码块**
+# 代码块
 
 ```markdown
 `行间代码块`
 ```
 
-**分割线**
+# 分割线
 
 ```markdown
 ---
@@ -94,7 +94,7 @@ $$
 
 ---
 
-**引用**
+# 引用
 
 ```markdown
 >/ 内容
@@ -107,14 +107,14 @@ $$
 > 
 > shift+enter不会打断引用
 
-**图片**
+# 图片
 
 ```markdown
 ![[name]]
 ```
 
 ![[story_img_01.jpg]]
-**表格**
+# 表格
 
 ```markdown
 |名字|性别|年龄|
@@ -127,7 +127,7 @@ $$
 |安琦航|男|22|
 |许诺|女|
 
-**链接**
+# 链接
 
 ```markdown
 [name](url/"title")
@@ -137,7 +137,7 @@ $$
 
 <anqihang0106@outlook.com>
 
-**脚注**
+# 脚注
 
 ```markdown
 单词[^1]
@@ -153,7 +153,7 @@ $$
 >  hellow
 ```
 
-Callout Blocks 类型
+# Callout Blocks 类型
 
 - note && 笔  ![[Pasted image 20220806200623.png]]
 - abstract/sumary/tldr 文档 ![[Pasted image 20220806200953.png]]
@@ -172,4 +172,5 @@ Callout Blocks 类型
 > a
 > 
 
+#别名 
 

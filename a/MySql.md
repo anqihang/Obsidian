@@ -34,6 +34,7 @@ use <数据库名>;
 
 ```MySQL
 CREATE TABLE <`表名`> (列名 列数据类型);
+#
 CREATE TABLE `USER`(
 	`USER_ID` INT AUTO_INCREMENT [PRIMARY KEY],
 	`USER_NAME` VARCHAR(20) NOT NULL,
@@ -85,7 +86,7 @@ INSERT INTO <`表名`> SET <列名>=<值> <列名>=<值>
 SELECT [功能] <列名|*> FROM <表名> [约束]
 [约束]
 	-ORDER BY <列名> ASC|DESC
-	-GROUP BY <列名> 
+	-GROUP BY <列名> HAVING
 	-LIMIT <行数>
 [功能]
 	-DISTINCT 去重
@@ -180,6 +181,7 @@ drop view <viewname>
 ```
 
 # 存储过程/函数
+
 ```MySQL
 delimiter $结束标记
 &&
@@ -223,6 +225,7 @@ set [@]局部变量名[:]=值
 ```
 
 # 判断
+
 ```MySQL
 if(表达式1，表达式2，表达式3)
 &&

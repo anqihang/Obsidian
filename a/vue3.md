@@ -94,7 +94,6 @@ watch(a,(newv,oldv)=>{},{immediate:true})
 	[a,b]|()=>{a.c}#监视多个或某个属性&&ref对象需要.value
 watchEffect不需要元数据，依赖于回调函数中所有数据的变化，立即执行
 ```
-
 ## hooks
 
 ```js
@@ -131,6 +130,19 @@ provide('key',value)
 inject('key')
 ```
 
-<fragment>&类似vue2的最外部包含标签
-<teleport>&控制标签内容在那个
-<Suspent>&控制延迟显示的标签的暂时替代显示【实验性的】
+`<fragment>`&类似vue2的最外部包含标签
+`<teleport>`&控制标签内容在那个
+`<Suspent>`&控制延迟显示的标签的暂时替代显示【实验性的】
+
+# vite创建项目
+
+安装脚手架工具（安装并执行create-vue)
+`npm init vue@last`   
+
+安装依赖并开启服务器
+```
+> cd <your-project-name>
+> npm install
+> npm run dev
+```
+

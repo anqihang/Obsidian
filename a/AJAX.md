@@ -47,6 +47,7 @@ parms
 ```
 GET:axios.get('url',{value}).then()
 axios({})
+#api
 ```
 
 # fetch
