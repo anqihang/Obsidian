@@ -64,7 +64,7 @@ r-read可读&&w-write可写&&x-execute可执行////属主-属组-其他用户
 - `vim`
 - `yum`
 - `curl` 查看网络内容
-- `scp`  `scp -r /root/lk root@106.14.167.5:/home/admin` 把本地lk文件复制到远程的admin文件夹下
+- `scp`#`scp -r /root/lk root@106.14.167.5:/home/admin` 把本地lk文件复制到远程的admin文件夹下
 ctrl_shift_f
 
 

@@ -48,7 +48,7 @@ git config --global color.ui auto -- 启用命令行的可用着色
 	git remote ---添加远程库的简洁变量origin
 	git fetch  --- 从远程库获取项目到本地库(版本库)[增量拉取]
 	git pull   ---从远程库拉取项目到工作区
-	git push [branch] ---从版本库推送项目到远程库
+	git push [origin] [branch] ---从版本库推送项目到远程库
 #标签(lightweght)轻量标签(annotated)附注标签
 	git tag
 	

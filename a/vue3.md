@@ -94,6 +94,7 @@ watch(a,(newv,oldv)=>{},{immediate:true})
 	[a,b]|()=>{a.c}#监视多个或某个属性&&ref对象需要.value
 watchEffect不需要元数据，依赖于回调函数中所有数据的变化，立即执行
 ```
+
 ## hooks
 
 ```js
@@ -146,3 +147,28 @@ inject('key')
 > npm run dev
 ```
 
+# router
+
+```js
+app.use(router);
+cosnt router = VueRouter.createRouter({
+	history:VueRouter.createWebHistory(),
+	routes:[]
+})
+```
+
+```js
+//模板中可以使用$router\$route，所以setup不需要返回
+const router = useRouter();
+const route = userRoute();
+
+```
+
+# mitt全局事件总线
+
+```js
+#install
+	npm install mitt
+#useg
+	import 
+```

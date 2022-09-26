@@ -36,10 +36,10 @@ use <数据库名>;
 CREATE TABLE <`表名`> (列名 列数据类型);
 #
 CREATE TABLE `USER`(
-	`USER_ID` INT AUTO_INCREMENT [PRIMARY KEY],
-	`USER_NAME` VARCHAR(20) NOT NULL,
+	`USER_ID` INT AUTO_INCREMENT [PRIMARY KEY],//主键
+	`USER_NAME` VARCHAR(20) NOT NULL [FOREIGN KEY],//外键
 	[PRIMARY KEY (`USER_ID`)]
-	unique [index(``)]
+	unique [index(``)]//最后一行不加‘，
 )[ENGINE=INNODB DEFAULT CHARSET=UTF8;]
 ```
 
@@ -66,9 +66,9 @@ DESCRIBE(desc简略) <表名>
 ```MySQL
 ALTER TABLE <表名> 
 [选项]
-	-ADD COLUMN <[foreign key] (列名)> <类型> [first|after <列名>]
-	-CHANGE COLUMN <旧列名> <新列名> <类型>
-	-ALTER COLUMN <列名> {set default <值>|drop default}
+	-ADD COLUMN <[foreign key] (列名)> <类型> [first|after <列名>]//添加
+	-CHANGE COLUMN <旧列名> <新列名> <类型>//改变
+	-ALTER COLUMN <列名> {set default <值>|drop default}//修改
 	-MODIFY <列名> <新类型>
 	-DROP COLUMN <列名>
 	-RENAME TO <表名>
@@ -82,6 +82,7 @@ INSERT INTO <`表名`> SET <列名>=<值> <列名>=<值>
 ```
 
 ## 查询数据
+
 ```MySQL
 SELECT [功能] <列名|*> FROM <表名> [约束]
 [约束]

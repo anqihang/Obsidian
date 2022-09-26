@@ -1,8 +1,17 @@
+# 创建
+
+```js
+npm install @vue/cli
+vue create <your project name>
+cd <your project name>
+npm run serve
+```
+
 # 指令
 
 ```javascript
 #内置
-	v-bind#:&&单向绑定
+	v-bind/:&&单向绑定
 	v-model&&双向绑定
 	v-once
 	v-html
@@ -14,6 +23,7 @@
 	v-for
 	v-text
 	v-cloak
+	v-solt/#&&插槽
 	v-pre&&跳过
 #自定义
 	directives:{
@@ -77,8 +87,8 @@ vm.$nextTick
 beforeCreate
 created
 #
-beforeMout
-mouted
+beforeMount
+mounted
 #
 beforeUpdate
 updated
@@ -198,7 +208,7 @@ const v = Vue.extend({---》{}
 })
 ```
 
-# vuex
+# vuex #2中只能用@3
 
 ```javascript
 import vue from 'vue'
@@ -232,7 +242,7 @@ this.$store.commit('namespace.method',value)
 this.$store.dispatch('namespace.method',value)
 ```
 
-# vue-router
+# vue-router #2中用@3
 
 ```javascript
 import router from 'vue-router';
