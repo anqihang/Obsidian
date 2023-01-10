@@ -28,7 +28,9 @@ type a=[] #别名 //let i=a;
 ```
 
 联合类型
-`let a:number|string =0`  
+```ts
+let a:number|string =0
+```
 
 接口(规定必须有接口的属性)
 ```ts
@@ -43,7 +45,13 @@ interface name {
 ```
 
 继承
-`interface person extends name[,name1]{age:number}`  
+`interface person extends name[,name1]{age:number}` 
+
+任意属性
+`var oo: { num: number; [propName: string]: unknown };`
+
+元组
+`let aa: [string, number];`
 
 命名空间  #可嵌套
 ```ts
@@ -56,5 +64,32 @@ namespaced SpaceName{
 	///《reference path= '文件名称' />#另一个文件
 ```
 
-泛类
+泛类-类型不明确时使用-在执行的时候确定
+```ts
+function fn2<T>(a: T): T {
+  return a;
+}
+```
+
 枚举
+```ts
+enum Gender {
+  male,
+  female,
+} //{male=1}默认从0
+let i: { name: string; gender: Gender };
+i = { name: "an", gender: Gender.male };
+```
+
+抽象类，做继承父类的，不可实例
+```ts
+abstract class person {
+  //抽象方法，没有方法体,子类必须重写
+  abstract show(): void;
+}
+```
+
+declare
+
+
+stype

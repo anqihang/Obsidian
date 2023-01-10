@@ -3,6 +3,7 @@ master：默认主分支
 origin：默认远程版本库
 Head：默认开发分支
 Head^：Head的父提交 
+
 \# 配置
 
 ```
@@ -53,4 +54,10 @@ git config --global color.ui auto -- 启用命令行的可用着色
 	git tag
 	
 	
+```
+
+# 快捷键
+```git
+粘贴
+	#shift+ins
 ```

@@ -1,3 +1,6 @@
+---
+mindmap-plugin: basic
+---
 # Markdown
 
 #### 标题语法
